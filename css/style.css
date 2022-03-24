@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+/* to-do:
+1. have all photos hover = show a title and year with animation
+4. have animations on nav
+5. fix contact page
+6. aria-lables
+7. check mobilee view on phone
+*/
+
+
+h1 {
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    max-width: 80%;
+}
+
+img {
+    min-width: 75%;
+    max-width: 76%;
+    padding: 10px;
+    display: block;
+}
+
+#headshot {
+    justify-self: center;
+    margin:0 auto;
+    min-width: 75%;
+    animation: slidein 3s;
+}
+
+@keyframes slidein {
+    from {opacity: 0; border-radius: 15%;}
+    to {opacity: 1; border-radius: 0%;}
+}
+
+@media (prefers-reduced-motion) {
+    #headshot {
+        animation: none;
+    }
+}
+
+#space {
+    background-image: url(../images/groovy.jpg);
+    background-color: azure;
+}
+
+a {
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+.skip {
+    font-family: 'Nunito Sans', helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 13px;
+    padding-left: 80px;
+    position:relative;  
+    right: 500px;
+}
+
+.skip:focus {
+    position: static;
+}
+
+nav {
+    margin-top: 30px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    display: inline;
+    font-family: 'Nunito Sans', helvetica, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 10px 35px;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+.chosen {
+    color: darkblue;
+    border: 1px darkblue solid;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-family: 'Work Sans', helvetica, sans-serif;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 75%; 
+    margin: auto;
+    margin-bottom: 3%;
+ }
+
+footer {
+    font-family: 'Raleway', helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.oil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.oil p {
+    max-width: 76%;
+}
+
+.other {
+    display: grid;
+    grid-template-columns: 1fr 40fr 1fr;
+}
+
+.other img {
+    grid-column: 2 / span 1;
+    justify-self: center;
+}
+
+.other p {
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+.digital {
+    display: grid;
+    grid-template-columns: 1fr 40fr 1fr;
+}
+
+.digital img {
+    grid-column: 2 / span 1;
+    justify-self: center;
+}
+
+.digital p {
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+.fa {
+    margin: 5px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+}
+  
+legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=checkbox]{
+      display:inline;
+      width:inherit;
+}
+  
+input[type=submit] {
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
